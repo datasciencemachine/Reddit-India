@@ -9,16 +9,14 @@
     <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
    <!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
-   <link href="{{ url_for('static',filename = 'style.css') }}" rel="stylesheet" type="text/css"> -->
-  <link rel="stylesheet" href="style.css">
+   <link href="{{ url_for('static',filename = 'style.css') }}" rel="stylesheet" type="text/css">
+  
 </head>
 <body>
     <!--Put heading here-->
 <div class="heading_tag">
     Flair It Up
-    <img class="top_icon" src="aaa.png" alt="error">
 </div>
-
 <div class="formbox">
 <form action="{{ url_for('main') }}" method="POST">
     <fieldset>
@@ -28,14 +26,14 @@
         <br>
         <br>
         <input type="submit" class="btn btn-primary btn-block btn-large">
-
-
-
+        
+    
+    
 </fieldset>
 
 </form>
 </div>
-<img class="bottom_logo" src="aaa.png" alt="error">
+
 <br>
 <div class="result" align="center">
     {% if result %}
