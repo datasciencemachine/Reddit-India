@@ -10,6 +10,7 @@ import json
 import joblib
 from gensim import utils
 import gensim.parsing.preprocessing as gsp
+from app import app
 
 filters = [
 		   gsp.strip_tags,
