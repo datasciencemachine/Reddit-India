@@ -10,7 +10,6 @@ import json
 import joblib
 from gensim import utils
 import gensim.parsing.preprocessing as gsp
-from app import app
 
 filters = [
 		   gsp.strip_tags,
@@ -35,7 +34,8 @@ app = Flask(__name__,template_folder='templates')
 # Use joblib to load in the pre-trained model
 model = joblib.load(open('model.pkl', 'rb'))
 
-reddit = praw.Reddit(client_id='8-xCwnG8N3QJOw', client_secret='Hu5luIlZWsHED__mLEqAYhoYfVOxSQ', user_agent='r/india', username='Dororo_hyaki')
+reddit = praw.Reddit(client_id='QPdCUgBcp4WinA', client_secret='HF-sKHVC5Os3gufVxWvzIKijNb4', user_agent='reddit-flair', username='reddit-flair', password='flair123')
+
 
 def prediction(url):
 	submission = reddit.submission(url = url)
